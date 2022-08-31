@@ -1,0 +1,28 @@
+import random
+
+def number_guess():
+    chances = 0
+    while chances < d :
+    
+        chances +=1
+        guess = int(input("enter your guessing : "))
+        if guess<0:
+            print("enter the positive numbers")
+        
+        elif guess>num:
+            print('I\'ts lower then your guess , Remainder ! chance = ',chances)
+        elif guess<num:
+            print("the number is higher then your choice , Remainder ! chance = ", chances)
+        else:
+            return 'Good job..! you got the correct answer in your {}  chance'.format(chances)
+            
+    else:
+        print('sorry you are out of chances')
+
+a = input('Enter Your Name : ')
+print('Hi...\n {} you need to find the number which computer guesses'.format(a) )
+d = int(input('number of maximum chances '))
+b = int(input('lower limit of your choice '))
+c = int(input('higher limit of your choice '))
+num = random.randint(b,c)
+print(number_guess())
